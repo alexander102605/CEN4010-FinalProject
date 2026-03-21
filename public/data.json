@@ -1,0 +1,426 @@
+[
+    {
+        "char": "p",
+        "type": "consonant",
+        "place": "bilabial",
+        "manner": "plosive",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "ant"]
+    },
+    {
+        "char": "b",
+        "type": "consonant",
+        "place": "bilabial",
+        "manner": "plosive",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "ant","voice", "ant"]
+    },
+    {
+        "char": "t",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "plosive",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "ant", "cor", "ant"]
+    },
+    {
+        "char": "d",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "plosive",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "cor", "ant"]
+    },
+    {
+        "char": "k",
+        "type": "consonant",
+        "place": "velar",
+        "manner": "plosive",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons"]
+    },
+    {
+        "char": "g",
+        "type": "consonant",
+        "place": "velar",
+        "manner": "plosive",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice"]
+    },
+    {
+        "char": "ʔ",
+        "type": "consonant",
+        "place": "glottal",
+        "manner": "plosive",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons"]
+    },
+    {
+        "char": "m",
+        "type": "consonant",
+        "place": "bilabial",
+        "manner": "nasal",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "ant", "nas"]
+    },
+    {
+        "char": "n",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "nasal",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "cor", "ant", "nas"]
+    },
+    {
+        "char": "ŋ",
+        "type": "consonant",
+        "place": "velar",
+        "manner": "nasal",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "nas"]
+    },
+    {
+        "char": "ɾ",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "tap",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "cor", "ant"]
+    },
+    {
+        "char": "f",
+        "type": "consonant",
+        "place": "labiodental",
+        "manner": "fricative",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "ant", "cont", "strid"]
+    },
+    {
+        "char": "v",
+        "type": "consonant",
+        "place": "labiodental",
+        "manner": "fricative",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "ant", "cont", "strid"]
+    },
+    {
+        "char": "θ",
+        "type": "consonant",
+        "place": "dental",
+        "manner": "fricative",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "cor", "ant", "cont"]
+    },
+    {
+        "char": "ð",
+        "type": "consonant",
+        "place": "dental",
+        "manner": "fricative",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "cor", "ant", "cont"]
+    },
+    {
+        "char": "s",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "fricative",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "cor", "ant", "cont", "strid"]
+    },
+    {
+        "char": "z",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "fricative",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "cor", "ant", "cont", "strid"]
+    },
+    {
+        "char": "ʃ",
+        "type": "consonant",
+        "place": "postalveolar",
+        "manner": "fricative",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "cor", "cont", "strid"]
+    },
+    {
+        "char": "ʒ",
+        "type": "consonant",
+        "place": "postalveolar",
+        "manner": "fricative",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "cor", "cont", "strid"]
+    },
+    {
+        "char": "h",
+        "type": "consonant",
+        "place": "glottal",
+        "manner": "fricative",
+        "voice": false,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "cont"]
+    },
+    {
+        "char": "ɹ",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "approximant",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "cor", "ant", "cont"]
+    },
+    {
+        "char": "j",
+        "type": "consonant",
+        "place": "palatal",
+        "manner": "approximant",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "cor", "ant", "cont"]
+    },
+    {
+        "char": "l",
+        "type": "consonant",
+        "place": "alveolar",
+        "manner": "lateral approximant",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "cor", "ant", "cont", "lat"]
+    },
+    {
+        "char": "w",
+        "type": "consonant",
+        "place": "labial-velar",
+        "manner": "approximant",
+        "voice": true,
+        "frontness": "",
+        "openness": "",
+        "features": ["cons", "voice", "son", "cont"]
+    },
+
+
+
+
+    {
+        "char": "i",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "close",
+        "tense": true,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "y",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "close",
+        "tense": true,
+        "round": true,
+        "features": []
+    },
+    {
+        "char": "u",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "back",
+        "openness": "close",
+        "tense": true,
+        "round": true,
+        "features": []
+    },
+    {
+        "char": "ɪ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "close",
+        "tense": false,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "ʊ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "back",
+        "openness": "close",
+        "tense": false,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "e",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "close-mid",
+        "tense": true,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "o",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "back",
+        "openness": "close-mid",
+        "tense": true,
+        "round": true,
+        "features": []
+    },
+    {
+        "char": "ɛ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "open-mid",
+        "tense": true,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "eɪ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "close-mid",
+        "tense": true,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "ə",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "central",
+        "openness": "mid",
+        "tense": false,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "ʌ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "back",
+        "openness": "open-mid",
+        "tense": true,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "ɔ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "back",
+        "openness": "open-mid",
+        "tense": true,
+        "round": true,
+        "features": []
+    },
+    {
+        "char": "æ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "open-mid",
+        "tense": false,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "aɪ",
+        "type": "vowel",
+        "place": "",
+        "manner": "",
+        "voice": true,
+        "frontness": "front",
+        "openness": "open",
+        "tense": true,
+        "round": false,
+        "features": []
+    },
+    {
+        "char": "ɑ",
+        "type": "vowel",
+        "place": "back",
+        "manner": "open",
+        "voice": true,
+        "frontness": "back",
+        "openness": "open",
+        "tense": true,
+        "round": false,
+        "features": []
+    }
+]

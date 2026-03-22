@@ -6,8 +6,7 @@
         "manner": "plosive",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "ant"]
+        "openness": ""
     },
     {
         "char": "b",
@@ -16,8 +15,7 @@
         "manner": "plosive",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "ant","voice", "ant"]
+        "openness": ""
     },
     {
         "char": "t",
@@ -26,8 +24,7 @@
         "manner": "plosive",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "ant", "cor", "ant"]
+        "openness": ""
     },
     {
         "char": "d",
@@ -36,8 +33,7 @@
         "manner": "plosive",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "cor", "ant"]
+        "openness": ""
     },
     {
         "char": "k",
@@ -46,8 +42,7 @@
         "manner": "plosive",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons"]
+        "openness": ""
     },
     {
         "char": "g",
@@ -56,8 +51,7 @@
         "manner": "plosive",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice"]
+        "openness": ""
     },
     {
         "char": "ʔ",
@@ -66,8 +60,7 @@
         "manner": "plosive",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons"]
+        "openness": ""
     },
     {
         "char": "m",
@@ -76,8 +69,7 @@
         "manner": "nasal",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "ant", "nas"]
+        "openness": ""
     },
     {
         "char": "n",
@@ -86,8 +78,7 @@
         "manner": "nasal",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "cor", "ant", "nas"]
+        "openness": ""
     },
     {
         "char": "ŋ",
@@ -96,8 +87,7 @@
         "manner": "nasal",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "nas"]
+        "openness": ""
     },
     {
         "char": "ɾ",
@@ -106,8 +96,7 @@
         "manner": "tap",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "cor", "ant"]
+        "openness": ""
     },
     {
         "char": "f",
@@ -116,8 +105,7 @@
         "manner": "fricative",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "ant", "cont", "strid"]
+        "openness": ""
     },
     {
         "char": "v",
@@ -126,8 +114,7 @@
         "manner": "fricative",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "ant", "cont", "strid"]
+        "openness": ""
     },
     {
         "char": "θ",
@@ -136,8 +123,7 @@
         "manner": "fricative",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "cor", "ant", "cont"]
+        "openness": ""
     },
     {
         "char": "ð",
@@ -146,8 +132,7 @@
         "manner": "fricative",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "cor", "ant", "cont"]
+        "openness": ""
     },
     {
         "char": "s",
@@ -156,8 +141,7 @@
         "manner": "fricative",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "cor", "ant", "cont", "strid"]
+        "openness": ""
     },
     {
         "char": "z",
@@ -166,8 +150,7 @@
         "manner": "fricative",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "cor", "ant", "cont", "strid"]
+        "openness": ""
     },
     {
         "char": "ʃ",
@@ -176,8 +159,7 @@
         "manner": "fricative",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "cor", "cont", "strid"]
+        "openness": ""
     },
     {
         "char": "ʒ",
@@ -186,8 +168,7 @@
         "manner": "fricative",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "cor", "cont", "strid"]
+        "openness": ""
     },
     {
         "char": "h",
@@ -196,8 +177,7 @@
         "manner": "fricative",
         "voice": false,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "cont"]
+        "openness": ""
     },
     {
         "char": "ɹ",
@@ -206,8 +186,7 @@
         "manner": "approximant",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "cor", "ant", "cont"]
+        "openness": ""
     },
     {
         "char": "j",
@@ -216,8 +195,7 @@
         "manner": "approximant",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "cor", "ant", "cont"]
+        "openness": ""
     },
     {
         "char": "l",
@@ -226,8 +204,7 @@
         "manner": "lateral approximant",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "cor", "ant", "cont", "lat"]
+        "openness": ""
     },
     {
         "char": "w",
@@ -236,8 +213,7 @@
         "manner": "approximant",
         "voice": true,
         "frontness": "",
-        "openness": "",
-        "features": ["cons", "voice", "son", "cont"]
+        "openness": ""
     },
 
 
@@ -252,8 +228,7 @@
         "frontness": "front",
         "openness": "close",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "y",
@@ -264,8 +239,7 @@
         "frontness": "front",
         "openness": "close",
         "tense": true,
-        "round": true,
-        "features": []
+        "round": true
     },
     {
         "char": "u",
@@ -276,8 +250,7 @@
         "frontness": "back",
         "openness": "close",
         "tense": true,
-        "round": true,
-        "features": []
+        "round": true
     },
     {
         "char": "ɪ",
@@ -288,8 +261,7 @@
         "frontness": "front",
         "openness": "close",
         "tense": false,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "ʊ",
@@ -300,8 +272,7 @@
         "frontness": "back",
         "openness": "close",
         "tense": false,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "e",
@@ -312,8 +283,7 @@
         "frontness": "front",
         "openness": "close-mid",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "o",
@@ -324,8 +294,7 @@
         "frontness": "back",
         "openness": "close-mid",
         "tense": true,
-        "round": true,
-        "features": []
+        "round": true
     },
     {
         "char": "ɛ",
@@ -336,8 +305,7 @@
         "frontness": "front",
         "openness": "open-mid",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "eɪ",
@@ -348,8 +316,7 @@
         "frontness": "front",
         "openness": "close-mid",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "ə",
@@ -360,8 +327,7 @@
         "frontness": "central",
         "openness": "mid",
         "tense": false,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "ʌ",
@@ -372,8 +338,7 @@
         "frontness": "back",
         "openness": "open-mid",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "ɔ",
@@ -384,8 +349,7 @@
         "frontness": "back",
         "openness": "open-mid",
         "tense": true,
-        "round": true,
-        "features": []
+        "round": true
     },
     {
         "char": "æ",
@@ -396,8 +360,7 @@
         "frontness": "front",
         "openness": "open-mid",
         "tense": false,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "aɪ",
@@ -408,8 +371,7 @@
         "frontness": "front",
         "openness": "open",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     },
     {
         "char": "ɑ",
@@ -420,7 +382,6 @@
         "frontness": "back",
         "openness": "open",
         "tense": true,
-        "round": false,
-        "features": []
+        "round": false
     }
 ]

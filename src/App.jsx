@@ -1,54 +1,111 @@
 import "./App.css";
-import { useState, useEffect } from 'react';
-import ipa from './assets/data.json' with {type: 'json'};
-import filterJSON from './assets/filters.json' with {type: 'json'};
-
-
-
+import { useState, useEffect } from "react";
+import ipa from "./assets/data.json" with { type: "json" };
+import filterJSON from "./assets/filters.json" with { type: "json" };
 
 const App = () => {
-  const [filters, setFilters] = useState([]);
-  const [chars, setChars] = useState([]);
+  let filters = [];
+  filters = filters.concat(filterJSON);
 
-  let filterSet = []
-  filterSet.concat(filterJSON)
-  
-// useEffect(() => {setFilters([{"type": "consonant"}, {"type": "vowel"}])}, []);
-  
+  let [selectedFilters, setSelectedFilters] = useState({});
+  let [filteredData, setFilteredData] = useState(ipa);
 
-  const applyFilters = (filters) => {
-    let result = [];
-      for (let i of filters) {
-        let temp = ipa.filter((item) => item[Object.keys(i)] == Object.values(i))
-        result.push(...temp)
+  const handleChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    let checked = e.target.checked;
+
+    setSelectedFilters((prev) => {
+      if (name === "features") {
+        let current = prev.features || [];
+        let updated = checked ? [...current, value] : current.filter((v) => v !== value);
+        return { ...prev, features: updated };
       }
-      setChars(result)
-  }
 
-  const results = chars.map((i) => {return <div key={i["char"]}>{i["char"]}</div>})
+      if (value === "none") {
+        let updated = { ...prev };
+        delete updated[name];
+        return updated;
+      }
 
+      return { ...prev, [name]: value };
+    });
+  };
 
+  const applyFilters = (filters, data) => {
+    return data.filter((item) => {
+      return Object.entries(filters).every(([key, value]) => {
+        if (!value || (Array.isArray(value) && value.length === 0)) return true;
 
-  // const filterDisplay = filterSet.map((item) => {return <button key={Object.values(item)} onClick={() => applyFilters(item)}>{item}</button>})
+        if (value === "true") {
+            value = true
+        };
 
+        if (value === "false") {
+            value = false
+        };
 
+        if (key === "features") {
+          if (!item.features) return false;
+          return value.every((feature) => item.features.includes(feature));
+        }
 
+        return item[key] === value;
+      });
+    });
+  };
+
+  useEffect(() => {
+    let result = applyFilters(selectedFilters, ipa);
+    setFilteredData(result);
+  }, [selectedFilters]);
+
+  let categories = filters.map((item) => {
+    let key = Object.keys(item)[0];
+    if (!item[key]) return null;
+    let values = item[key];
+
+    return (
+      <div key={key}>
+        <h1>{key}</h1>
+        {values.map((x) => {
+          if (key === "features") {
+          } else {
+            return (
+              <label key={x} style={{ display: "block" }}>
+                <input
+                  type="radio"
+                  name={key}
+                  value={x}
+                  onChange={handleChange}
+                  checked={
+                    x === "none"
+                      ? selectedFilters[key] === undefined
+                      : selectedFilters[key] === x
+                  }
+                />
+                {x}
+              </label>
+            );
+          }
+        })}
+      </div>
+    );
+  });
 
   return (
     <div>
-      test
-      {/* <button onClick={() => applyFilters(filters, ipa)}>test button</button> */}
-      {/* <button onClick={() => console.log(chars)}>print chars</button> */}
-      <button></button>
-      {filterDisplay}
-      <br />
-      <br />
-      <hr />
-      <div>
-        {results}
+      <div className="container">
+        <form className="leftBox">{categories}</form>
+        <div className="centerBox">
+          <h2>Results</h2>
+          {filteredData.map((item) => {
+            return <div key={item.char}>{item.char}</div>;
+          })}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;

@@ -79,6 +79,7 @@ const removeFilter = (key, valueToRemove = null) => {
   }, [selectedFilters]);
 
   return (
+<<<<<<< HEAD
     <div className="container">
       {/* LEFT SIDE */}
       <Sidebar selectedFilters={selectedFilters} handleChange={handleChange} />
@@ -138,6 +139,16 @@ const removeFilter = (key, valueToRemove = null) => {
               );
             })}
           </ul>
+=======
+    <div>
+      <div className="container">
+        <form className="leftBox">{categories}</form>
+        <div className="centerBox">
+          <h2>Results</h2>
+          {filteredData.map((item) => {
+            return <span key={item.char}> {item.char} </span>;
+          })}
+>>>>>>> 6719f8cf08fbba00742cefabd01554028f37adc3
         </div>
       </div>
     </div>

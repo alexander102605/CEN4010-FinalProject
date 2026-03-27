@@ -100,7 +100,7 @@ const App = () => {
         <div className="centerBox">
           <h2>Results</h2>
           {filteredData.map((item) => {
-            return <div key={item.char}>{item.char}</div>;
+            return <span key={item.char}> {item.char} </span>;
           })}
         </div>
       </div>

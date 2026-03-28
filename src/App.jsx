@@ -32,6 +32,34 @@ const App = () => {
       return { ...prev, [name]: value };
     });
   };
+  const categories = filters.map((item, i) => {
+    const key = Object.keys(item)[0];
+    const values = item[key];
+    if (Object.keys(item)[0] == "features") {
+    } else {
+      return (
+        <div key={Object.keys(item)}>
+          <h1 key={Object.keys(item)} >
+            {Object.keys(item)}
+          </h1>
+
+          {values.map((value) => (
+            <label key={value}>
+              <input
+                className="options"
+                id={key}
+                type="radio"
+                name={key}
+                value={value}
+                onChange={handleChange}
+              />
+              {value}
+            </label>
+          ))}
+        </div>
+      )
+    }
+  });
 
   const applyFilters = (filters, data) => {
     return data.filter((item) => {
@@ -117,7 +145,6 @@ const removeFilter = (key, valueToRemove = null) => {
                       className="remove-btn"
                       onClick={() => removeFilter(key, v)}
                     >
-                      ❌
                     </button>
                   </li>
                 ));
@@ -133,14 +160,13 @@ const removeFilter = (key, valueToRemove = null) => {
                     className="remove-btn"
                     onClick={() => removeFilter(key)}
                   >
-                    ❌
                   </button>
                 </li>
               );
             })}
           </ul>
-{/* ======= */}
-    <div>
+
+    {/* <div>
       <div className="container">
         <form className="leftBox">{categories}</form>
         <div className="centerBox">
@@ -148,10 +174,10 @@ const removeFilter = (key, valueToRemove = null) => {
           {filteredData.map((item) => {
             return <span key={item.char}> {item.char} </span>;
           })}
-{/* >>>>>>> 6719f8cf08fbba00742cefabd01554028f37adc3 */}
+
         </div>
       </div>
-    </div>
+    </div> */}
 </div>
 </div></div>
   );

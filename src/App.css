@@ -9,6 +9,11 @@ body {
 .container {
   display: flex;
   gap: 20px;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Sidebar */
@@ -85,6 +90,16 @@ body {
 .options-container input[type="radio"]:checked {
   font-weight: 600;
   color: #1f3a93;
+}
+/* Search Bar */
+.searchBar {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #bcccdc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 /* Center results */

@@ -10,7 +10,8 @@ const App = () => {
 
   const [selectedFilters, setSelectedFilters] = useState({});
   const [filteredData, setFilteredData] = useState(ipa);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchInput, setSearchInput] = useState("");
+  const [submittedSearch, setSubmittedSearch] = useState("");
 
   const handleChange = (e) => {
     const { name, value, checked } = e.target;
@@ -102,27 +103,16 @@ const removeFilter = (key, valueToRemove = null) => {
   });
 };
 
-  useEffect(() => {
-    let result = applyFilters(selectedFilters, ipa);
+const handleSearchSubmit = (e) => {
+  e.preventDefault();
+  setSubmittedSearch(searchInput);
+}
 
-    if (searchTerm.trim() !== "") {
-      const query = searchTerm.toLowerCase();
+useEffect(() => {
+  const result = applyFilters(selectedFilters, ipa);
+  setFilteredData(result);
+}, [selectedFilters]);
 
-      result = result.filter((item) => {
-        return Object.values(item).some((value => {
-          if (Array.isArray(value)) {
-            return value.some((v) =>
-            String(v).toLowerCase().includes(query)
-          )
-          }
-
-          return String(value).toLowerCase().includes(query);
-        }))
-      })
-    }
-
-    setFilteredData(result);
-  }, [selectedFilters, searchTerm]);
 
   return (
 
@@ -134,14 +124,6 @@ const removeFilter = (key, valueToRemove = null) => {
       <div className="centerBox">
         <h2>Results</h2>
 
-        <input
-          type="text"
-          className="searchBar"
-          placeholder="Search IPA symbols or properties..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-
         <div className="results-grid">
           {filteredData.map((item) => (
             <div className="result-item" key={item.char}>
@@ -149,6 +131,23 @@ const removeFilter = (key, valueToRemove = null) => {
             </div>
           ))}
         </div>
+
+        <form className="searchSection" onSubmit={handleSearchSubmit}>
+          <input
+            type="text"
+            className="searchBar"
+            placeholder="Search transcription..."
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
+        </form>
+
+        {submittedSearch && (
+          <div className="apiResultBox">
+            <h3>Search Result</h3>
+            <p>{submittedSearch}</p>
+          </div>
+        )}
       </div>
 
       {/* RIGHT SIDE */}

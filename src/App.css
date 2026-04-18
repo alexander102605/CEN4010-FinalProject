@@ -102,6 +102,18 @@ body {
   box-sizing: border-box;
 }
 
+.searchSection {
+  margin-top: 20px;
+}
+
+.apiResultBox {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f0f4f8;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+}
+
 /* Center results */
 .centerBox {
   flex-grow: 1;

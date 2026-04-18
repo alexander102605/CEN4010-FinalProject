@@ -107,20 +107,7 @@ const handleSearchSubmit = async (e) => {
   e.preventDefault();
   // setSubmittedSearch(searchInput);
   
-  let word = searchInput
-  const url = `https://https://cen-flask-api.vercel.app/?lang=en&word=${word}`
-    const response = await fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network Error")
-      }
-      return response.json();
-    }).then(data => {
-      // handle the data in here
-
-    }).catch(error => {
-      console.error("An error occurred in the fetch operation!!!")
-    })
+ 
   
 }
 

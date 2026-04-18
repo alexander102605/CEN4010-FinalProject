@@ -1,0 +1,22 @@
+const fetchIPA = async () => {
+    if (!word) {
+      setResult("Please enter a word!");
+      return;
+    }
+
+    setLoading(true);
+    setResult("");
+
+    try {
+      const res = await fetch(
+        `https://cen-flask-api.vercel.app/?lang=${lang}&word=${word}`
+      );
+      const data = await res.json();
+
+      // your API returns [word, ipa]
+      setResult(`Word: ${data[0]} | IPA: /${data[1]}/`);
+    } catch (err) {
+      console.error(err);
+      setResult("Error fetching data!");
+    }
+

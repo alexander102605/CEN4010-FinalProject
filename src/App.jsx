@@ -106,8 +106,22 @@ const removeFilter = (key, valueToRemove = null) => {
 const handleSearchSubmit = async (e) => {
   e.preventDefault();
   // setSubmittedSearch(searchInput);
-  
+  let word = searchInput;
+  let url = `https://cen-flask-api.vercel.app/?lang=en&word=${word}` 
  
+  const response = await fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      return Error("Network Error")
+    }
+
+    return response.json()
+  }).then(data => {
+    setSubmittedSearch(data[1])
+  }).catch(error => {
+    console.error("An error has occurred in the fetch operation")
+  })
+  
   
 }
 

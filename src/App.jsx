@@ -166,18 +166,7 @@ const removeFilter = (key, valueToRemove = null) => {
             })}
           </ul>
 
-    {/* <div>
-      <div className="container">
-        <form className="leftBox">{categories}</form>
-        <div className="centerBox">
-          <h2>Results</h2>
-          {filteredData.map((item) => {
-            return <span key={item.char}> {item.char} </span>;
-          })}
 
-        </div>
-      </div>
-    </div> */}
 </div>
 </div></div>
   );

@@ -12,6 +12,7 @@ const App = () => {
   const [filteredData, setFilteredData] = useState(ipa);
   const [searchInput, setSearchInput] = useState("");
   const [submittedSearch, setSubmittedSearch] = useState("");
+  const [language, setLanguage] = useState("en");
 
   const handleChange = (e) => {
     const { name, value, checked } = e.target;
@@ -81,7 +82,7 @@ const App = () => {
     });
   };
 
-{/*FUNCTION FOR REMOVING FILTERS ON RIGHT SIDE */} 
+// FUNCTION FOR REMOVING FILTERS ON RIGHT SIDE
 const removeFilter = (key, valueToRemove = null) => {
   setSelectedFilters((prev) => {
     const updated = { ...prev };
@@ -107,7 +108,7 @@ const handleSearchSubmit = async (e) => {
   e.preventDefault();
   // setSubmittedSearch(searchInput);
   let word = searchInput;
-  let url = `https://cen-flask-api.vercel.app/?lang=en&word=${word}` 
+  let url = `https://cen-flask-api.vercel.app/?lang=${language}&word=${word}`
  
   const response = await fetch(url)
   .then(response => {
@@ -150,6 +151,19 @@ useEffect(() => {
         </div>
 
         <form className="searchSection" onSubmit={handleSearchSubmit}>
+          <label htmlFor="languageSelect">Language:</label>
+
+          <select
+            id="languageSelect"
+            className="languageDropdown"
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+          >
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+
           <input
             type="text"
             className="searchBar"

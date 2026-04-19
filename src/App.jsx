@@ -162,7 +162,7 @@ useEffect(() => {
         {submittedSearch && (
           <div className="apiResultBox">
             <h3>Search Result</h3>
-            <p>{submittedSearch}</p>
+            <span><p>{submittedSearch}</p> *Result provided by Wiktionary</span>
           </div>
         )}
       </div>
